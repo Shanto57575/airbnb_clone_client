@@ -1,7 +1,9 @@
+import Header from "./components/Header/Header";
+
 const App = () => {
 	return (
-		<div>
-			<h1>Hello Airbnb</h1>
+		<div className="max-w-7xl mx-auto">
+			<Header></Header>
 		</div>
 	);
 };
