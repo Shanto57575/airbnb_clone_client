@@ -1,0 +1,202 @@
+[
+	{
+		"id": 1,
+		"destination": "London, UK",
+		"rating": 4.5,
+		"hostName": "Harper Olivia",
+		"time": "Jan 1-5",
+		"price": 150,
+		"img": "https://i.postimg.cc/FzN96JsH/comfortable-modern-bedroom-with-elegant-decoration-lighting-generative-ai-188544-7715.jpg",
+		"category": "room"
+	},
+	{
+		"id": 2,
+		"destination": "Paris, France",
+		"rating": 4.2,
+		"hostName": "Charlotte Lily",
+		"time": "Feb 6-10",
+		"price": 130,
+		"img": "https://i.postimg.cc/hGVRqPYz/luxury-bedroom-with-modern-design-elegance-generative-ai-188544-40599.jpg",
+		"category": "room"
+	},
+	{
+		"id": 3,
+		"destination": "New York, USA",
+		"rating": 4.8,
+		"hostName": "Sophia Grace",
+		"time": "March 11-20",
+		"price": 180,
+		"img": "https://i.postimg.cc/NFHjTxnL/room-interior-design-23-2148899448.jpg",
+		"category": "room"
+	},
+	{
+		"id": 4,
+		"destination": "Sydney, Australia",
+		"rating": 4.6,
+		"hostName": "Ella Violet",
+		"time": "April 20-25",
+		"price": 220,
+		"img": "https://i.postimg.cc/PrMM0GKX/comfortable-modern-bedroom-with-bright-natural-sunlight-generated-by-ai-188544-31839.jpg",
+		"category": "room"
+	},
+	{
+		"id": 5,
+		"destination": "Rome, Italy",
+		"rating": 4.4,
+		"hostName": "Amelia Jade",
+		"time": "May 20-27",
+		"price": 200,
+		"img": "https://i.postimg.cc/xC0sX064/young-beautiful-couple-with-hiking-backpacks-go-trekking-496169-1264.jpg",
+		"category": "camping"
+	},
+	{
+		"id": 6,
+		"destination": "Moscow, Russia",
+		"rating": 4.7,
+		"hostName": "Isabella Lily",
+		"time": "June 15-25",
+		"price": 300,
+		"img": "https://i.postimg.cc/9Xb6tkT9/hiker-stand-camping-front-orange-tent-backpack-mountains-1150-9163.jpg",
+		"category": "camping"
+	},
+	{
+		"id": 7,
+		"destination": "Toronto, Canada",
+		"rating": 4.3,
+		"hostName": "Mia Harper",
+		"time": "July 2-7",
+		"price": 280,
+		"img": "https://i.postimg.cc/JzQyxMr8/beautiful-tropical-beach-sea-ocean-with-coconut-palm-tree-sunrise-time-74190-7454.jpg",
+		"category": "beach"
+	},
+	{
+		"id": 8,
+		"destination": "Beijing, China",
+		"rating": 4.9,
+		"hostName": "Ava Sophia",
+		"time": "August 10-25",
+		"price": 120,
+		"img": "https://i.postimg.cc/2Sny6mbv/beautiful-seaside-landscape-23-2150423954.jpg",
+		"category": "beach"
+	},
+	{
+		"id": 9,
+		"destination": "Berlin, Germany",
+		"rating": 4.1,
+		"hostName": "Emma Rose",
+		"time": "Sept 15-25",
+		"price": 100,
+		"img": "https://i.postimg.cc/C5pbRJML/tourist-tents-camp-among-meadow-night-mountains-158595-6105.jpg",
+		"category": "camping"
+	},
+	{
+		"id": 10,
+		"destination": "Seoul, South Korea",
+		"rating": 4.7,
+		"hostName": "Olivia Grace",
+		"time": "Oct 20-25",
+		"price": 250,
+		"img": "https://i.postimg.cc/vBGG3Mx5/looking-up-to-the-entrance-of-a-cave-palau-micronesia.webp",
+		"category": "caves"
+	},
+	{
+		"id": 11,
+		"destination": "Cairo, Egypt",
+		"rating": 4.5,
+		"hostName": "Daniel Grey",
+		"time": "Nov 19-25",
+		"price": 500,
+		"img": "https://i.postimg.cc/mkqnKvT2/aerial-shot-small-green-island-middle-ocean-181624-2933.jpg",
+		"category": "island"
+	},
+	{
+		"id": 12,
+		"destination": "Istanbul, Turkey",
+		"rating": 4.2,
+		"hostName": "Jackson Ellis",
+		"time": "December 20-25",
+		"price": 800,
+		"img": "https://i.postimg.cc/KjNNycRx/traveler-woman-sitting-on-canoe-with-aurora-borealis-over-spirit-island-in-maligne-lake-at.webp",
+		"category": "arctic"
+	},
+	{
+		"id": 13,
+		"destination": "Bangkok, Thailand",
+		"rating": 4.8,
+		"hostName": "Benjamin Scott",
+		"time": "July 20-25",
+		"price": 1200,
+		"img": "https://i.postimg.cc/ZYFF2tKf/green-aurora-borealis-alaska-usa.webp",
+		"category": "arctic"
+	},
+	{
+		"id": 14,
+		"destination": "Cape Town, South Africa",
+		"rating": 4.6,
+		"hostName": "Henry Cole",
+		"time": "Oct 20-23",
+		"price": 1000,
+		"img": "https://i.postimg.cc/NMTtDSL1/240-F-289818775-k-X7-Ls-IJEADPn-ZWnb7-Wf-HMl-Yh1y7syai-Z.jpg",
+		"category": "arctic"
+	},
+	{
+		"id": 15,
+		"destination": "Mexico City, Mexico",
+		"rating": 4.4,
+		"hostName": "Lucas Bennett",
+		"time": "Feb 1-7",
+		"price": 300,
+		"img": "https://i.postimg.cc/WbTfzzLG/photo-1572587356426-b33bf42f999b-ixlib-rb-4-0.jpg",
+		"category": "caves"
+	},
+	{
+		"id": 16,
+		"destination": "London, UK",
+		"rating": 4.7,
+		"hostName": "Aiden Carter",
+		"time": "Feb 14-20",
+		"price": 600,
+		"img": "https://i.postimg.cc/mgcLz4PV/aerial-view-beautiful-koh-tao-island-surat-thani-thailand-335224-1066.jpg",
+		"category": "island"
+	},
+	{
+		"id": 17,
+		"destination": "Toronto, Canada",
+		"rating": 4.3,
+		"hostName": "Oliver Mason",
+		"time": "Nov 7-13",
+		"price": 350,
+		"img": "https://i.postimg.cc/fLfY0mVc/beautiful-tropical-beach-sea-with-chair-blue-sky-74190-7488.jpg",
+		"category": "beach"
+	},
+	{
+		"id": 18,
+		"destination": "London, UK",
+		"rating": 4.9,
+		"hostName": "Ethan Alexander",
+		"time": "Dec 18-25",
+		"price": 150,
+		"img": "https://i.postimg.cc/mgcLz4PV/aerial-view-beautiful-koh-tao-island-surat-thani-thailand-335224-1066.jpg",
+		"category": "island"
+	},
+	{
+		"id": 19,
+		"destination": "Sydney, Australia",
+		"rating": 4.1,
+		"hostName": "Noah James",
+		"time": "April 20-24",
+		"price": 280,
+		"img": "https://i.postimg.cc/5t0h00z7/full-length-of-a-carefree-man-looking-at-sunbeam-entering-the-cave.webp",
+		"category": "caves"
+	},
+	{
+		"id": 20,
+		"destination": "Berlin, Germany",
+		"rating": 4.5,
+		"hostName": "Liam Parker",
+		"time": "May 1-12",
+		"price": 550,
+		"img": "https://i.postimg.cc/hvxwWCvL/hiking-adventure-travel-man-watching-glacier-iceland-335224-658.jpg",
+		"category": "arctic"
+	}
+]
