@@ -1,21 +1,16 @@
-import { useEffect, useState } from "react";
 import { AiFillStar } from "react-icons/ai";
 
-const ShowAllCategory = () => {
-	const [allCategory, setAllCategory] = useState([]);
-
-	useEffect(() => {
-		fetch("http://localhost:5000/categories")
-			.then((res) => res.json())
-			.then((data) => setAllCategory(data));
-	}, []);
-
+const ShowAllCategory = ({ specificCategory }) => {
 	return (
-		<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mb-20">
-			{allCategory.map((category) => (
+		<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 mb-20">
+			{specificCategory.map((category) => (
 				<div key={category.id} className="card">
 					<figure>
-						<img className="relative h-64" src={category.img} alt="room" />
+						<img
+							className="relative h-64 scale-110 hover:scale-125 duration-500"
+							src={category.img}
+							alt="destination"
+						/>
 					</figure>
 					<span className="absolute top-3 right-3 text-white">
 						<svg

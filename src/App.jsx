@@ -1,7 +1,5 @@
 import Category from "./components/Category/Category";
-import ShowAllCategory from "./components/Category/ShowAllCategory";
 import Header from "./components/Header/Header";
-import { Taxes } from "./components/Taxes/Taxes";
 
 const App = () => {
 	return (
@@ -10,8 +8,6 @@ const App = () => {
 				<Header></Header>
 			</div>
 			<Category></Category>
-			<Taxes></Taxes>
-			<ShowAllCategory></ShowAllCategory>
 		</div>
 	);
 };
