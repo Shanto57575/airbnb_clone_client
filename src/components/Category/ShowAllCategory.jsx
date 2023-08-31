@@ -30,7 +30,7 @@ const ShowAllCategory = ({ specificCategory }) => {
 					</span>
 					<div className="card-body p-0 mt-2">
 						<div className="flex items-center justify-between">
-							<h2 className="card-title font-serif">{category.destination}</h2>
+							<h2 className="card-title">{category.destination}</h2>
 							<h4 className="flex items-center gap-1">
 								<AiFillStar /> {category.rating}
 							</h4>
