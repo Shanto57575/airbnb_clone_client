@@ -12,6 +12,7 @@ const Category = () => {
 
 	const [allCategory, setAllCategory] = useState([]);
 	const [specificCategory, setSpecificCategory] = useState([]);
+	const [showButton, setShowButton] = useState("All");
 
 	const [loader, setLoader] = useState(true);
 
@@ -31,7 +32,7 @@ const Category = () => {
 	};
 
 	useEffect(() => {
-		fetch("http://localhost:5000/categories")
+		fetch("https://airbnb-clone-server-tawny.vercel.app/categories")
 			.then((res) => res.json())
 			.then((data) => {
 				setAllCategory(data);
@@ -47,7 +48,9 @@ const Category = () => {
 			setSpecificCategory(allCategory);
 		} else {
 			setActiveCategory(category);
-			fetch(`http://localhost:5000/categories/${category}`)
+			fetch(
+				`https://airbnb-clone-server-tawny.vercel.app/categories/${category}`
+			)
 				.then((res) => res.json())
 				.then((data) => setSpecificCategory(data));
 		}
@@ -55,13 +58,22 @@ const Category = () => {
 
 	const filterData = () => {
 		fetch(
-			`http://localhost:5000/filter?type=${type}&priceRange=${range.join(
+			`https://airbnb-clone-server-tawny.vercel.app/filter?type=${type}&priceRange=${range.join(
 				"-"
 			)}&bedrooms=${bedrooms}&beds=${beds}&bathrooms=${bathrooms}&propertyType=${propertyType}`
 		)
-			.then((res) => res.json())
+			.then((res) => {
+				if (res.status === 404) {
+					return { count: 0, matchingData: [] };
+				}
+				return res.json();
+			})
 			.then((data) => {
-				setSpecificCategory(data);
+				const { count, matchingData } = data;
+				console.log(matchingData);
+				setSpecificCategory(matchingData);
+				setShowButton(count);
+				console.log(matchingData.length);
 			})
 			.catch((error) => {
 				console.log(error);
@@ -72,7 +84,6 @@ const Category = () => {
 		filterByCategory();
 	}, []);
 
-	// useEffect to automatically update data when filter values change
 	useEffect(() => {
 		filterData();
 	}, [type, range, bedrooms, beds, bathrooms, propertyType]);
@@ -295,7 +306,7 @@ const Category = () => {
 							</div>
 							<div className="text-end my-2">
 								<button className="btn" onClick={() => filterData()}>
-									Show All Places
+									Show {showButton} Places
 								</button>
 							</div>
 						</form>
@@ -304,9 +315,9 @@ const Category = () => {
 			</div>
 			<Taxes></Taxes>
 			{loader ? (
-				<div className="w-full mx-auto text-center text-blue-500 text-7xl">
+				<div className="w-full mx-auto text-center text-blue-500 md:text-7xl">
 					L
-					<span className="inline-block w-12 h-12 border-8 border-blue-500 border-dashed rounded-full animate-spin"></span>
+					<span className="inline-block md:w-12 md:h-12 border-4 md:border-8 border-blue-500 border-dashed rounded-full animate-spin"></span>
 					<span>ading....</span>
 				</div>
 			) : (
