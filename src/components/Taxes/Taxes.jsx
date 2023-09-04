@@ -10,7 +10,6 @@ export const Taxes = () => {
 			<input
 				className="bg-stone-400 border border-slate-400 toggle h-9 w-[60px]"
 				type="checkbox"
-				checked
 			/>
 		</div>
 	);

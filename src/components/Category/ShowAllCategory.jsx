@@ -1,13 +1,14 @@
 import { AiFillStar } from "react-icons/ai";
+import { LiaGreaterThanSolid } from "react-icons/lia";
 
 const ShowAllCategory = ({ specificCategory }) => {
 	return (
-		<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 mb-20">
-			{specificCategory.map((category) => (
-				<div key={category.id} className="card">
+		<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mb-20 mx-2 lg:mx-0">
+			{specificCategory.map((category, index) => (
+				<div key={index} className="card group relative">
 					<figure>
 						<img
-							className="relative h-64 scale-110 hover:scale-125 duration-500"
+							className="h-64 scale-110  hover:scale-125 duration-500"
 							src={category.img}
 							alt="destination"
 						/>
@@ -28,6 +29,9 @@ const ShowAllCategory = ({ specificCategory }) => {
 							/>
 						</svg>
 					</span>
+					<div className="hidden group-hover:block absolute top-1/3 bg-white rounded-full text-black right-3 p-2 cursor-pointer">
+						<LiaGreaterThanSolid size={13} />
+					</div>
 					<div className="card-body p-0 mt-2">
 						<div className="flex items-center justify-between">
 							<h2 className="card-title">{category.destination}</h2>
